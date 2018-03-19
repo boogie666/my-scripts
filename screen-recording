@@ -1,0 +1,31 @@
+#!/bin/bash
+function file_name() 
+{
+  local count=-1;
+  local filename=$(echo "${1}.${2}")
+  while [ -f $filename ] 
+  do
+    filename=$(echo "${1}${count}.${2}")
+    count=$(( $count - 1 ))
+  done 
+
+  echo $filename
+}
+
+
+
+dimensions=$(xdpyinfo | grep dimensions | awk '{print $2}')
+framerate=30
+extension="mp4"
+filename_tpl="output"
+
+
+ffmpeg \
+  -video_size ${dimensions} \
+  -framerate $framerate \
+  -f x11grab \
+  -i :0.0 \
+  -f $extension \
+  -c:v libx264 \
+  $(file_name $filename_tpl $extension)
+
