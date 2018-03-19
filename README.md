@@ -1,5 +1,5 @@
 
-##Clone the repo
+## Clone the repo
 
 Clone the repo in ~/.bin
 
