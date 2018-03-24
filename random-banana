@@ -1,0 +1,33 @@
+#!/bin/bash
+
+
+echo "chingan
+pisang-jari-buaya
+sinwobogi
+giant-cavendish
+robusta
+dwarf-red
+bodles-altafort
+golden-beauty
+atan
+maqueño
+popoulu
+mysore
+pisang-raja
+french-plantain
+green-french
+horn-plantain
+pink-french
+tiger
+pome
+prata-anã
+pisang-seribu
+plu
+kalamagol
+ney-poovan
+bluggoe
+silver-bluggoe
+pelipita
+cardaba
+benedetta
+tiparot" | shuf -n 1
