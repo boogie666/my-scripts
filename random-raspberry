@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+echo "amber
+boyne
+canby
+chief
+latham
+sumner
+taylor
+willamette
+heritage
+september
+fallgold
+allen
+bristol
+dundee
+huron
+munger
+clyde
+marion
+sodus" | shuf -n 1
